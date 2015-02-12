@@ -1,0 +1,33 @@
+<ion-view view-title="Recherche">
+  <ion-content>
+    <h1>Rechercher un bien :</h1>
+    <form ng-submit="rechercher()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Input 1</span>
+          <input type="text" ng-model="rechercheData.inpt1">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Input 2</span>
+          <input type="text" ng-model="rechercheData.inpt2">
+        </label>
+          <div class="range">
+              <i class="icon ion-volume-low"></i>
+              <input type="range" name="volume">
+              <i class="icon ion-volume-high"></i>
+          </div>
+
+          <div class="list">
+              <div class="item range range-positive">
+                  <i class="icon ion-ios7-sunny-outline"></i>
+                  <input type="range" name="volume" min="0" max="100" value="33">
+                  <i class="icon ion-ios7-sunny"></i>
+              </div>
+          </div>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Rechercher</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
